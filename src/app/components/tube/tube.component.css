@@ -1,0 +1,58 @@
+h2 {
+    text-align: center;
+    color: #1976d2;
+}
+h2:hover {
+    text-shadow: rgb(0, 255, 65) 0px 0 5px;
+    transition: all 0.5s ease-in-out;
+}
+img {
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
+}
+img:hover {
+    transform: translateY(-2px);
+    box-shadow: rgb(0, 255, 65) 0px 0px 15px;
+    transition: all 0.5s ease-in-out;
+}
+label {
+    font-weight: 600;
+}
+button {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+.solutionLabel {
+    font-weight: 800;
+}
+.calculationitem {
+    display: flex;
+    justify-content: center;
+}
+.itemcontainer {
+    display: flex;
+    flex-direction: row;
+}
+.parameterslist {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 515px) {
+
+    img {
+        width: 150px;
+        height: 125px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .itemcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}

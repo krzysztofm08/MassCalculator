@@ -1,0 +1,24 @@
+<h2>Rod</h2>
+<div class="calculationitem">
+    <div class="itemcontainer">
+        <img
+          alt="Rod"
+          src="assets/images/rod.jpg"
+        />
+        <div class="parameterslist">
+          <label>Diameter [mm]</label>
+          <input class="" type="number" #rodInputDiameter>
+          <label>Length [mm]</label>
+          <input type="number" #rodInputLength>
+
+          <button class="" 
+          (click)="rodButtonClicked(
+              rodInputDiameter.value,
+              rodInputLength.value);"
+          >Calculate!</button> 
+
+          <label>Weight [kg]</label>
+          <label class="solutionLabel" #rodOutputWeight [style.color]=' messageColor ? "rgb(0, 255, 65)" : "red" '>{{ rodOutputWeightValue }}</label>
+        </div>
+    </div>
+</div>
